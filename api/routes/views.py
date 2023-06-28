@@ -8,6 +8,7 @@ from flask_limiter import Limiter
 from ratelimit import limits
 from flask import Flask
 from flask_caching import Cache
+from flask_jwt_extended import jwt_required
 
 
 
@@ -55,6 +56,7 @@ def get_states():
 
 @state_ns.route('/states/<string:state_id>')
 class State(Resource):
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600)
     def get(self, state_id):
@@ -85,6 +87,7 @@ class State(Resource):
 
 @state_ns.route('/regions/<string:region_id>')
 class Region(Resource):
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600)
     def get(self, region_id):
@@ -130,6 +133,7 @@ def get_lgas():
  
 @state_ns.route('/regions')
 class Regions(Resource): 
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600) 
     def get(self):
@@ -153,6 +157,7 @@ class Regions(Resource):
 
 @state_ns.route('/lgas')
 class Lgas(Resource):
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600) 
     def get(self):
@@ -180,6 +185,7 @@ class Lgas(Resource):
 
 @state_ns.route('/lgas/<string:state_id>')
 class Lga(Resource):
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600)
     def get(self, state_id):
@@ -207,6 +213,7 @@ class Lga(Resource):
 
 @state_ns.route('/states')
 class States(Resource):
+    @jwt_required()
     @limits(calls=2, period=86400)
     @cache.cached(timeout=3600)
     def get(self):
@@ -230,6 +237,7 @@ class States(Resource):
 
 @state_ns.route('/search/<string:query>')
 class Search(Resource):
+    @jwt_required()
     def get(self, query):
         """
         Search for a state or LGA
