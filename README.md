@@ -9,7 +9,7 @@
 
 <div>
   <p align="center">
-    <a href="https://github.com/AlxeverCodeX/Locale-API/blob/main/README.md"><strong>Explore the Docs »</strong></a>
+    <a href="https://github.com/AlxeverCodeX/Locale-API/wiki"><strong>Explore the Docs »</strong></a>
     <br />
     <a href="https://github.com/AlxeverCodeX/Locale-API/blob/main/images/2.png">View Demo</a>
     ·
