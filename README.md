@@ -130,6 +130,8 @@ authentication and authorization route. You can register as a User via the
 
 ---
 
+ ## Future Feature
+ To add a frontend that can be used to consume this API
 
 
 
