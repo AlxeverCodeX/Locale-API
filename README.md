@@ -27,7 +27,6 @@
 # locale_api
 Locale is developer tool for anyone who needs to know Nigeria geopraphically. Locale's API shows you all Nigeria's regions, states, and local governement areas (LGAs). Locale is looking to be a very useful tool for the thousands of businesses building for Nigeria's 200M+ population size.
 
-This project was built with Python's Flask-RESTX as part of Backend Engineering (Python) final Semester Examination and graduation Project at [Altschool Africa](https://www.altschoolafrica.com/)
 
 
 
@@ -148,11 +147,4 @@ Emmanuel Albert - [@alnuelCode_X](https://twitter.com/alnuelCode_X) - salberthp8
 Distributed under the MIT License. See <a href="https://github.com/AlxeverCodeX/Locale-API/blob/main/LICENSE">LICENSE</a> for more information.
 
 
-## Acknowledgements
-
-This project was made possible by:
-
-* [AltSchool Africa School of Engineering](https://altschoolafrica.com/schools/engineering)
-* [Caleb Emelike's Flask Lessons](https://github.com/CalebEmelike)
-* [Class Rep compiled live classes project](https://github.com/Ze-Austin/altschool-python)
 
