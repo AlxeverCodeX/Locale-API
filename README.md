@@ -71,7 +71,7 @@ Working this Project helped me understand these concepts:
 
 To use this API, follow these steps:
 
-1. Project URL: https://locale-42dr.onrender.com/
+1. Project URL: https://github.com/AlxeverCodeX/Locale-API
 
 2. Create a User account
 
